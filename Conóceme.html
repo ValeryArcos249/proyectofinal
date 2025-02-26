@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAYOR INFORMACIÓN</title>
+    <style>
+       body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+}
+header, nav, article, aside, footer {
+	padding: 20px;
+	margin: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header {
+	background-color: #73def9;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+nav {
+	background-color: #d854ef;
+	text-align: center;
+}
+nav a {
+	margin: 0 15px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+article {
+	flex: 2;
+}
+section {
+	background-color: #ffdd99;
+	margin: 10px 0;
+	padding: 15px;
+}
+aside {
+	flex: 1;
+	background-color: #5eee9e;
+}
+footer {
+	background-color: #09e0d2;
+	text-align: center;
+	color: white;
+}
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+    </style>
+</head>
+<body>
+    <header>Conoce un poco más</header>
+    <nav>
+        <a href="Inicio.html">Inicio</a>
+        <a href="Social.html">Historia Social</a>
+        <a href="Conóceme.html">Conoce más</a>
+        <a href="Contacto.html">Contacto</a>
+		<a href="Resultado.html">Resultado</a>
+    </nav>
+    <article>
+        <h2>Nike Colombia</h2>
+		<a href="https://www.bing.com/ck/a?!&&p=e6c165deb80cdeb0cf350f7ad66a7efa8065f33e6ba3c4f83fd4ff35ecf32f50JmltdHM9MTczOTQ5MTIwMA&ptn=3&ver=2&hsh=4&fclid=3dbf29a4-8c4d-68cb-39f5-3d058dd969a5&psq=que+es+la+marca+Nike&u=a1aHR0cDovL2RpZmVudS53ZWVibHkuY29tL3F1aWVuZXMtc29tb3MuaHRtbA&ntb=1">CONOCE NIKE</a>
+		<a href="https://www.bing.com/ck/a?!&&p=bab0dad0d39b06725afecdd672f8ae0a15eb09c9d11b6326cad75319dc85c223JmltdHM9MTczOTQ5MTIwMA&ptn=3&ver=2&hsh=4&fclid=3dbf29a4-8c4d-68cb-39f5-3d058dd969a5&psq=Nike+Colombia+pagina+oficial&u=a1aHR0cHM6Ly93d3cubmlrZS5jb20uY28v&ntb=1">NIKE COLOMBIA</a>
+    </article>
+    <footer>
+        &copy; 2025 Ropa Deportiva Nike
+    </footer>
+</body>
+</html>
